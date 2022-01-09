@@ -141,7 +141,6 @@ i {
         width: 180px;
         height: 50px;
         border-radius: 50px;
-        box-shadow: 5px 5px 20px 5px hsl(257, 50%, 44%);
     }
     .button a {
         color: var(--Violet);
@@ -153,9 +152,8 @@ i {
     /* ---- Footer ---- */
     footer div {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
+        justify-content: flex-end;
+        margin: 0 40px 40px 0;
     }
     i {
         margin: 0 10px 0 10px;
