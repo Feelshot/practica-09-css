@@ -8,7 +8,156 @@
     padding: 0;
 }
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
     background-color: var(--Violet);
+    background-image: url(img/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* ---- Icono ---- */
+header img {
+    width: 130px;
+    margin: 30px 0 30px 30px;
+}
+
+/* ---- Imagen central ---- */
+figure img {
+    margin: 20px auto 0 auto;
+    width: 300px;
+}
+/* ---- Contenido general ---- */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1, p, .button a, footer a{
+    color: whitesmoke;
+}
+
+/* ---- Textos ---- */
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    margin: 30px auto 20px auto;
+    width: 290px;
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    width: 330px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* ---- Boton ---- */
+.button {
+    width: 220px;
+    height: 40px;
+    margin: 20px auto 100px auto;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 20px 5px hsl(257, 50%, 44%);
+}
+.button:hover {
+    background-color: var(--Soft-Magenta);
+    transition: 0.5s;
+}
+.button a:hover {
+    transition: 0.5s;
+    color: whitesmoke;
+}
+.button a {
+    color: var(--Violet);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+/* ---- Footer ---- */
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+i {
+    margin: 0 10px 0 10px;
+}
+
+/* ---- Media Desktop ---- */
+@media (min-width: 1000px) {
+    body {
+        background-image: url(img/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    /* ---- Icono ---- */
+    header img {
+        width: 250px;
+        margin: 60px 0 60px 80px;
+    }
+    
+    /* ---- Imagen central ---- */
+    figure img {
+        margin: 0 auto 0 60px;
+        width: 680px;
+    }
+    /* ---- Contenido general ---- */
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    /* ---- Textos ---- */
+    h1 {
+        margin: 30px 0 30px 0;
+        width: 420px;
+        font-size: 38px;
+        text-align: left;
+    }
+    p {
+        width: 460px;
+        text-align: left;
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    .text-container {
+        width: 500px;
+    }
+
+    /* ---- Boton ---- */
+    .button {
+        margin: 20px 0 100px 0;
+        display: flex;
+        justify-content: center;
+        align-items: left;
+        width: 180px;
+        height: 50px;
+        border-radius: 50px;
+        box-shadow: 5px 5px 20px 5px hsl(257, 50%, 44%);
+    }
+    .button a {
+        color: var(--Violet);
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+    }
+    
+    /* ---- Footer ---- */
+    footer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    i {
+        margin: 0 10px 0 10px;
+    } 
 }
